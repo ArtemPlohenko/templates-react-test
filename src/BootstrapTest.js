@@ -31,7 +31,7 @@ function BootstrapTest() {
           </Form>
         </Col>
         <Col>
-          <Carousel data-bs-theme="dark">
+          <Carousel data-bs-theme="">
             <Carousel.Item>
               <img
                 className="d-block w-100"
