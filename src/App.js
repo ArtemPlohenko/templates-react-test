@@ -94,9 +94,18 @@ const Wrapper = styled.div`
   margin: 80px auto 0 auto;
 `;
 
+const DynamicGreating = (props) => {
+  return <div className={"mb-3 p-3 border border-" + props.color}>{props.children}</div>;
+};
+
 function App() {
   return (
     <Wrapper>
+      <DynamicGreating color={"primary"}>
+        <h2>This weel was hars</h2>
+        <h2>Hello world!</h2>
+      </DynamicGreating>
+
       <WhoAmi name="John" surname="Smith" link="facebook.com" />
       <WhoAmi name="Alex" surname="Shepard" link="facebook.com" />
     </Wrapper>
