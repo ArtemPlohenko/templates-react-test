@@ -6,12 +6,12 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 
-function BootstrapTest() {
+function BootstrapTest(props) {
   return (
     <Container className="mt-5 mb-5">
       <Row>
         <Col>
-          <Form>
+          {/* <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
@@ -28,10 +28,12 @@ function BootstrapTest() {
             <Button variant="primary" type="submit">
               Submit
             </Button>
-          </Form>
+          </Form> */}
+          {props.left}
         </Col>
         <Col>
-          <Carousel data-bs-theme="">
+          {props.right}
+          {/* <Carousel data-bs-theme="">
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -65,7 +67,7 @@ function BootstrapTest() {
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
               </Carousel.Caption>
             </Carousel.Item>
-          </Carousel>
+          </Carousel> */}
         </Col>
       </Row>
     </Container>
